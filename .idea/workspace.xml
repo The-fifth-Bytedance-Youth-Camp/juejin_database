@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1291ad68-6de6-4611-a0c6-5d5246172fd7" name="变更" comment="feat(post): initialize the post database">
-      <change afterPath="$PROJECT_DIR$/juejin_person/person.sql" afterDir="false" />
+    <list default="true" id="1291ad68-6de6-4611-a0c6-5d5246172fd7" name="变更" comment="feat(post): initialize the person database">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/409808f7-2800-4fc0-888a-14c8b7145c71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/409808f7-2800-4fc0-888a-14c8b7145c71.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/juejin-mysql.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/juejin_database.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/juejin_person.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/juejin_post.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/juejin_post/juejin_post_article.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/juejin_post/juejin_post_category.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/juejin_post/juejin_post_tag.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/juejin_post/juejin_post_tag_article.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/juejin_post/post.sql" beforeDir="false" afterPath="$PROJECT_DIR$/juejin_post/post.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juejin_person/person.sql" beforeDir="false" afterPath="$PROJECT_DIR$/juejin_person/person.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +94,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat(post): initialize the post database" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(post): initialize the post database" />
+    <MESSAGE value="feat(post): initialize the person database" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(post): initialize the person database" />
   </component>
 </project>
