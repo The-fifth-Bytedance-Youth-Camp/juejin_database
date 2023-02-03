@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1291ad68-6de6-4611-a0c6-5d5246172fd7" name="变更" comment="fix(post): add gmt_created and gmt_modified for each table">
-      <change afterPath="$PROJECT_DIR$/juejin_person/person.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juejin_person/juejin_person.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/ER_diagram/juejin_person.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juejin_person/person.sql" beforeDir="false" afterPath="$PROJECT_DIR$/juejin_person.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juejin_post/juejin_post.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/ER_diagram/juejin_post.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juejin_post/post.sql" beforeDir="false" afterPath="$PROJECT_DIR$/juejin_post.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +41,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Nextjs-仿掘金站点\源代码\juejin-database" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_database" />
+      <recent name="E:\Nextjs-仿掘金站点\源代码\juejin_database\ER_diagram" />
     </key>
   </component>
   <component name="RunManager">
