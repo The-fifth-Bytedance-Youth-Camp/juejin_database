@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1291ad68-6de6-4611-a0c6-5d5246172fd7" name="变更" comment="fix(post): add gmt_created and gmt_modified for each table">
+    <list default="true" id="1291ad68-6de6-4611-a0c6-5d5246172fd7" name="变更" comment="refactor: change directory structure">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/409808f7-2800-4fc0-888a-14c8b7145c71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/409808f7-2800-4fc0-888a-14c8b7145c71.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/juejin_person/juejin_person.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/ER_diagram/juejin_person.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/juejin_person/person.sql" beforeDir="false" afterPath="$PROJECT_DIR$/juejin_person.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/juejin_post/juejin_post.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/ER_diagram/juejin_post.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/juejin_post/post.sql" beforeDir="false" afterPath="$PROJECT_DIR$/juejin_post.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ER_diagram/juejin_person.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/ER_diagram/juejin_person.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juejin_post.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="database.data.extractors.current.export.id" value="SQL 插入" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/juejin_post" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -102,6 +101,7 @@
     <MESSAGE value="feat(post): initialize the post database" />
     <MESSAGE value="feat(post): initialize the person database" />
     <MESSAGE value="fix(post): add gmt_created and gmt_modified for each table" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(post): add gmt_created and gmt_modified for each table" />
+    <MESSAGE value="refactor: change directory structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: change directory structure" />
   </component>
 </project>
