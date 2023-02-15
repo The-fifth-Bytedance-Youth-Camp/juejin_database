@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1291ad68-6de6-4611-a0c6-5d5246172fd7" name="变更" comment="refactor: change directory structure">
-      <change afterPath="$PROJECT_DIR$/juejin_post.sql" afterDir="false" />
+    <list default="true" id="1291ad68-6de6-4611-a0c6-5d5246172fd7" name="变更" comment="feat(post): add website watch function">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/409808f7-2800-4fc0-888a-14c8b7145c71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/409808f7-2800-4fc0-888a-14c8b7145c71.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/409808f7-2800-4fc0-888a-14c8b7145c71/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/409808f7-2800-4fc0-888a-14c8b7145c71/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juejin_post.sql" beforeDir="false" afterPath="$PROJECT_DIR$/juejin_post.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +60,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="juejin_person.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/juejin_person.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="数据库脚本.juejin_person.sql" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,6 +112,7 @@
     <MESSAGE value="feat(post): initialize the person database" />
     <MESSAGE value="fix(post): add gmt_created and gmt_modified for each table" />
     <MESSAGE value="refactor: change directory structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: change directory structure" />
+    <MESSAGE value="feat(post): add website watch function" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(post): add website watch function" />
   </component>
 </project>
