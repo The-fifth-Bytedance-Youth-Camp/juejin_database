@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1291ad68-6de6-4611-a0c6-5d5246172fd7" name="变更" comment="feat(post): add website watch function">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/409808f7-2800-4fc0-888a-14c8b7145c71.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/409808f7-2800-4fc0-888a-14c8b7145c71.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/409808f7-2800-4fc0-888a-14c8b7145c71/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/409808f7-2800-4fc0-888a-14c8b7145c71/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juejin_person.sql" beforeDir="false" afterPath="$PROJECT_DIR$/juejin_person.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/juejin_post.sql" beforeDir="false" afterPath="$PROJECT_DIR$/juejin_post.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

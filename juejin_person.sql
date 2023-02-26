@@ -30,11 +30,12 @@ CREATE TABLE `admin` (
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` char(32) NOT NULL,
-  `is_allow` tinyint(1) NOT NULL DEFAULT '0' COMMENT '验证是否通过',
-  `gmt_modified` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `gmt_created` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `gmt_modified` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `is_allow` tinyint(1) NOT NULL DEFAULT '1' COMMENT '验证是否通过',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `admin_id_uindex` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,7 +44,7 @@ CREATE TABLE `admin` (
 
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-INSERT INTO `admin` VALUES (1,'admin','juejin_community@yeah.net','e10adc3949ba59abbe56e057f20f883e',1,NULL,'2023-02-03 09:44:48');
+INSERT INTO `admin` VALUES (1,'Admin','juejin_community@yeah.net','e10adc3949ba59abbe56e057f20f883e','2023-02-03 09:44:48','2023-02-21 21:26:33',1);
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -55,13 +56,13 @@ DROP TABLE IF EXISTS `permission`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `permission` (
-  `id` int NOT NULL,
+  `id` varchar(30) NOT NULL,
   `is_allow` tinyint(1) NOT NULL,
   `is_author` tinyint(1) NOT NULL,
   `gmt_modified` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `gmt_created` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
-  CONSTRAINT `permission_ibfk_1` FOREIGN KEY (`id`) REFERENCES `user` (`id`)
+  UNIQUE KEY `permission_id_uindex` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -71,7 +72,7 @@ CREATE TABLE `permission` (
 
 LOCK TABLES `permission` WRITE;
 /*!40000 ALTER TABLE `permission` DISABLE KEYS */;
-INSERT INTO `permission` VALUES (1,1,1,NULL,'2023-02-03 09:45:03');
+INSERT INTO `permission` VALUES ('1',1,1,NULL,'2023-02-03 09:45:03');
 /*!40000 ALTER TABLE `permission` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -83,14 +84,14 @@ DROP TABLE IF EXISTS `role`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `role` (
-  `id` int NOT NULL,
+  `id` varchar(30) NOT NULL,
   `is_super` tinyint(1) NOT NULL,
   `is_front` tinyint(1) NOT NULL,
   `is_audit` tinyint(1) NOT NULL,
   `gmt_modified` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `gmt_created` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
-  CONSTRAINT `role_ibfk_1` FOREIGN KEY (`id`) REFERENCES `admin` (`id`)
+  UNIQUE KEY `role_id_uindex` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -100,7 +101,6 @@ CREATE TABLE `role` (
 
 LOCK TABLES `role` WRITE;
 /*!40000 ALTER TABLE `role` DISABLE KEYS */;
-INSERT INTO `role` VALUES (1,1,1,1,NULL,'2023-02-03 09:45:09');
 /*!40000 ALTER TABLE `role` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -112,14 +112,15 @@ DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `user` (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `id` varchar(30) NOT NULL,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` char(32) NOT NULL,
   `gmt_modified` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `gmt_created` datetime DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_id_uindex` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -128,7 +129,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'倪成凯','nichengkai61@163.com','ac2b37c24b6b858d2efb405d2a30c493',NULL,'2023-02-03 09:45:16');
+INSERT INTO `user` VALUES ('1','倪成凯','nichengkai61@163.com','ac2b37c24b6b858d2efb405d2a30c493',NULL,'2023-02-03 09:45:16');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -141,4 +142,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-02-03  9:49:32
+-- Dump completed on 2023-02-26 11:29:20
